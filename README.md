@@ -4,6 +4,7 @@
 Sample App to search products using Mercado Libre Api.
 
 Application that uses Mercadolibre's APIs, with following sections:
+* Splash: app entry point
 * Sites:  available Mercado Libre sites to search products
 * Search: product search logic and answer list.
 * Product page: detail of a product (which should be accessible by tapping one
