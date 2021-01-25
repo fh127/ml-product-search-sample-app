@@ -1,10 +1,35 @@
-## Welcome to GitHub Pages
+# ML Product Search Sample App
 
-You can use the [editor on GitHub](https://github.com/fh127/ml-product-search-sample-app/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+## Description
+Sample App to search products using Mercado Libre Api.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Application that uses Mercadolibre's APIs, with following sections:
+* Sites:  available Mercado Libre sites to search products
+* Search: product search logic and answer list.
+* Product page: detail of a product (which should be accessible by tapping one
+of the items in the search result).
 
-### Markdown
+### Mercado Libre Api
+
+* Sites: this end point was used to get sites in the sample app
+```markdown
+   https://api.mercadolibre.com/sites
+```
+
+* Product Search: this end point was used to get search results in the sample app
+```markdown
+   https://api.mercadolibre.com/sites/{site}/search?q={query}
+```
+
+* Product Details: these end points were used to get product details in the sample app
+```markdown
+   https://api.mercadolibre.com/items/{itemId}
+
+   https://api.mercadolibre.com/users/{sellerId}
+```
+
+Documentation related to the [Mercado Libre api](https://developers.mercadolibre.com.ar/es_ar/items-y-busquedas#Obtener-%C3%ADtems-de-una-consulta-de-b%C3%BAsqueda)
+
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
