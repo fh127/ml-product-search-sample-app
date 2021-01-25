@@ -23,15 +23,24 @@ of the items in the search result).
 
 * Product Details: these end points were used to get product details in the sample app
 ```markdown
+   // get item info
    https://api.mercadolibre.com/items/{itemId}
-
+   
+   // get user info
    https://api.mercadolibre.com/users/{sellerId}
 ```
 
 Documentation related to the [Mercado Libre api](https://developers.mercadolibre.com.ar/es_ar/items-y-busquedas#Obtener-%C3%ADtems-de-una-consulta-de-b%C3%BAsqueda)
 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Architecture
+
+This sample app was based on [Android Architecture Components](https://developer.android.com/jetpack/guide) like reference.
+
+Consider the following component diagram, which shows the interactions between modules after designing the app:
+
+![Image](https://raw.githubusercontent.com/fh127/ml-product-search-sample-app/gh-pages/Screen%20Shot%202021-01-25%20at%2010.50.30%20AM.png)
+
 
 ```markdown
 Syntax highlighted code block
