@@ -9,6 +9,10 @@ Application that uses Mercadolibre's APIs, with following sections:
 * Product page: detail of a product (which should be accessible by tapping one
 of the items in the search result).
 
+### Mercado Libre Api
+
+Documentation related to the [Mercado Libre api](https://developers.mercadolibre.com.ar/es_ar/items-y-busquedas#Obtener-%C3%ADtems-de-una-consulta-de-b%C3%BAsqueda) 
+
 ## Requirements
 * Android Studio last stable version
 * Supported Android Devices >= 21 Api Level
