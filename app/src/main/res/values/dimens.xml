@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="login_layout_margin">60dp</dimen>
+    <dimen name="oval_height">180dp</dimen>
+    <dimen name="margin_xxsmall">4dp</dimen>
+    <dimen name="margin_xsmall">8dp</dimen>
+    <dimen name="margin_small">10dp</dimen>
+    <dimen name="margin_medium">16dp</dimen>
+    <dimen name="margin_large">24dp</dimen>
+    <dimen name="margin_xlarge">36dp</dimen>
+    <dimen name="loading_size">50dp</dimen>
+    <dimen name="splash_size">400dp</dimen>
+</resources>

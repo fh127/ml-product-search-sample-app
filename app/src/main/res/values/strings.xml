@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">ML Product Search</string>
+    <string name="site_message">Sites</string>
+    <string name="product_details_message">Product Details</string>
+    <string name="product_search_message">Products</string>
+    <string name="menu_search_message">Search Product</string>
+    <string name="product_price">%1$s %2$s</string>
+    <string name="seller_title">Seller Information</string>
+    <string name="seller_nick_name">NickName: %1$s</string>
+    <string name="seller_state">State: %1$s</string>
+    <string name="seller_reputation">Reputation: %1$s</string>
+    <string name="warranty">Warranty: \n%1$s</string>
+    <string name="paymentMethod">Payment Method: %1$s</string>
+    <string name="condition">Condition: %1$s</string>
+    <string name="quantity">Quantity: %1$s</string>
+    <string name="other">other</string>
+    <string name="mppayment">Mercado Pago</string>
+</resources>
