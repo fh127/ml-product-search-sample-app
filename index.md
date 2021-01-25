@@ -56,7 +56,7 @@ Consider the following component diagram, which shows the interactions between m
    - **viewmodel package:** contains the Viewmodel classes, which are responsible for connecting the data source logic with the presentation logic. These are entry      points to connect to repository interface and return the results using LiveData values for the user interface. 
    - **view package:** contains the classes and components that are responsible of UI layer in the app. It was used a Delegate Adapter pattern to render the results.
  
- **tes package:** contains unit test related with the implementation, the view models are the mainly tested.
+ **test package:** contains unit tests related with the implementation, the view models are the mainly tested.
 
 
 ## Libraries
