@@ -4,6 +4,7 @@
 Sample App to search products using Mercado Libre Api.
 
 Application that uses Mercadolibre's APIs, with following sections:
+* Splash: app entry point
 * Sites:  available Mercado Libre sites to search products
 * Search: product search logic and answer list.
 * Product page: detail of a product (which should be accessible by tapping one
@@ -41,31 +42,30 @@ Consider the following component diagram, which shows the interactions between m
 
 ![Image](https://raw.githubusercontent.com/fh127/ml-product-search-sample-app/gh-pages/Screen%20Shot%202021-01-25%20at%2010.50.30%20AM.png)
 
+### Structure packages:
 
-```markdown
-Syntax highlighted code block
+* **di package:** this package contains all classes and configurations related to app dependency injection using Dagger library.
 
-# Header 1
-## Header 2
-### Header 3
+* **repository package:** this package contains all classes related to the source data and use the repository interface like entry point to connect to UI layer     using Flow values and Coroutines. we have the following subpackages:
+   
+   - **api package:** contains the logic related to the Api client using Retrofit library.
+   - **api model:** contains the data classes to get the information provided for ML APi.
+   
+* **UI package:** this package contains all classes related to the UI layer. we have the following subpackages:
 
-- Bulleted
-- List
+   - **viewmodel package:** contains the Viewmodel classes, which are responsible for connecting the data source logic with the presentation logic. These are entry      points to connect to repository interface and return the results using LiveData values for the user interface. 
+   - **view package:** contains the classes and components that are responsible of UI layer in the app. It was used a Delegate Adapter pattern to render the results.
+ 
+ **tes package:** contains unit test related with the implementation, the view models are the mainly tested.
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
+## Libraries
+* **[Retrofit](https://github.com/square/retrofit):**  Http Client library and related dependecies to handle data from Api service.
+* **[Glide](https://github.com/bumptech/glide):**  Image Handling library
+* **[Dagger](https://github.com/google/dagger):**  dependency injector for Android
+* **[Coroutines](https://github.com/Kotlin/kotlinx.coroutines):** multithreading and concurrency
+* **[lottie](https://github.com/airbnb/lottie-android):** animations library
+* **[Android Architecture components](https://developer.android.com/jetpack/guide):** official Android development framework
+* **Test libraries:** 
 
-[Link](url) and ![Image](src)
-```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/fh127/ml-product-search-sample-app/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
